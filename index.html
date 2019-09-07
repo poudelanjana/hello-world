@@ -234,15 +234,41 @@
             <li  ><a href="#reservation">Conform </a></li>
         </ul>
 
-        <form>
-            <legend>
-                <label>Make a Reservation</label>
-                <p>Date  &nbsp;&nbsp;<input type="date" ></p>
-                <p>Time&nbsp;&nbsp<input type="time"></p>
-                <p>People&nbsp;&nbsp<input type="text"></p>
-               <a href="/aa/slect.html #reservation">Next</a>
-        </legend>
-        </form>
+        <div id="rprt1">
+            <form>
+                <legend>
+                    <label>Make a Reservation</label>
+                    <p>Date &nbsp;&nbsp;<input type="date"></p>
+                    <p>Time&nbsp;&nbsp<input type="time"></p>
+                    <p>People&nbsp;&nbsp<input type="text"></p>
+                    <a href="#rprt2" onclick="show2()">Next</a>
+                </legend>
+            </form>
+        </div>
+        <div id="rprt2">
+            <form>
+                <legend>
+                    <label>Slection</label>
+                    <p>Room no &nbsp;&nbsp;<input type="text"></p>
+                    <p>Table no&nbsp;&nbsp<input type="text"></p>
+                    <p>Spsl for&nbsp;&nbsp<input type="text" value="Occasion"></p>
+                    <a href="#rprt3" onclick="show3()">Next</a>
+                    <a href="#rprt1" style="float: left;" onclick="show1()">Back</a>
+        
+                </legend>
+            </form>
+        </div>
+        <div id="rprt3">
+            <form>
+                <legend>
+                    <label>Conformation</label>
+                    <p>Contact &nbsp;&nbsp;<input type="text"></p>
+                    <p>Addresh&nbsp;&nbsp;<input type="time"></p>
+                    <input type="submit" value="Reserve">
+                    <a href="#rprt1" style="float: left;" onclick="show2()">Back</a>
+                </legend>
+            </form>
+        </div>
     </div>
 </section>
 <section id="OurTeam">
@@ -383,6 +409,25 @@ $(document).ready(function(){
         $(this).addClass("active");
 
     });
+</script>
+<script type="text/javascript">
+    function show1() {
+        document.getElementById("rprt1").style.display = "inline";
+        document.getElementById("rprt2").style.display = "none";
+        document.getElementById("rprt3").style.display = "none";
+        console.log("aa");
+    }
+    function show2() {
+        document.getElementById("rprt2").style.display = "inline";
+        document.getElementById("rprt1").style.display = "none";
+        document.getElementById("rprt3").style.display = "none";
+        console.log("bb");
+    }
+    function show3() {
+        document.getElementById("rprt3").style.display = "inline";
+        document.getElementById("rprt1").style.display = "none";
+        document.getElementById("rprt2").style.display = "none";
+    }
 </script>
 
 </body>

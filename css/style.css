@@ -11,7 +11,9 @@
 #home img{
 margin: auto !important;
 }
-
+#rprt1,#rprt2{
+    display: none;
+}
 #reservation > li > a { 
   width: 350px;
     }
