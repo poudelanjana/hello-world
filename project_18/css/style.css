@@ -9,7 +9,7 @@ margin-left: 10px;
 }
 #navbar a{
     color:black;
-    padding:20px 75px;
+    padding:20px 77px;
     background: burlywood;
     text-decoration: none;
   
@@ -81,4 +81,9 @@ footer{
      height: 300px;
     width: 100%;
     z-index: 5;
+}
+.sp{
+    height:50px;
+    width:250px;
+    background: palevioletred;
 }
