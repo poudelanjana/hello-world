@@ -1,0 +1,84 @@
+body{
+   background: #eff0f1 !important;
+}
+
+#navbar{
+z-index: 6;
+margin-left: 10px;
+
+}
+#navbar a{
+    color:black;
+    padding:20px 86px;
+    background: burlywood;
+    text-decoration: none;
+  
+}
+
+#navbar a:hover {
+  background-color:red;
+  color: black;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 18px;
+  width: 100%;
+}
+
+p{
+    font-size: 15px;
+    padding-top: 20px;
+}
+.myflex{
+    display:flex;
+      flex-direction: row;
+}
+.anu{
+    text-align: center;
+  
+}
+.as{
+    height: 150px;
+    width: 140px;
+}
+.as p{
+    height:100px;
+    width:94px;
+    border:1px solid black;
+    background: crimson;
+}
+input{
+   
+    height: 30px;
+    width:100px;
+    border-radius: 10%;
+    background: chocolate;
+}
+.look{
+    display: none;
+    transition: display 4s;
+}
+#cl{
+    display: none;
+}
+#btns{
+    padding:00px 0px 0px 600px;
+  
+}
+footer{
+    height: 300px;
+    width: 100%;
+    margin-top:100px;
+}
+.oone{
+     height: 300px;
+    width: 100%;
+}
+.ttow{
+     height: 300px;
+    width: 100%;
+    z-index: 5;
+}
