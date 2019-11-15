@@ -15,31 +15,34 @@
         <img src="img/logo.jpg" height="100px" width="100ppx">
         
 </div>
+<i class="glyphicon glyphicon-align-justify" id="barrss" onclick="navShow()" ></i>
 <h2 class="anu">About Us</h2>
 <div class="myflex">
-   
-    <div class="col-md-3 " >
-        <img src="img/index.jfif" >
-    </div>
-    <div class="col-md-9">
-        <p>It is possible to put pages on the internet or on the web (text, audio, video, still images, animations, etc.).
-        Presently, individuals and commercial organizations around the world serve their information on the web. The Web page
-        has to be kept in the web page for any such information. Web pages can be created directly through HTML or other tools.
-        The web page can be displayed through the browser. One of the pages of a website is referred to as a web page.
-        </p>
+   <div class="row">
+        <div class="col-md-3 " >
+            <img src="img/index.jfif" >
+        </div>
+        <div class="col-md-9 tt">
+            <p>It is possible to put pages on the internet or on the web (text, audio, video, still images, animations, etc.).
+            Presently, individuals and commercial organizations around the world serve their information on the web. The Web page
+            has to be kept in the web page for any such information. Web pages can be created directly through HTML or other tools.
+            The web page can be displayed through the browser. One of the pages of a website is referred to as a web page.
+            </p>
+        </div>
     </div>
 </div>
 <div >
-    <h2>
+    <h2 style="margin-left:20px;" >
         Projects
     </h2>
-    <div class="show">
+   
+    <div class="row show">
         <div class="col-md-3 as"><p></p>project 1</div>
         <div class="col-md-3 as"><p></p>project 2 </div>
         <div class="col-md-3 as"> <p></p>project 3</div>
         <div class="col-md-3 as"><p></p>project 4 </div>
 
-<div id="navbar" style="z-index: 4;">
+        <div id="navbar" style="z-index: 4;">
    
       
             <a href="#">Menu</a>
@@ -49,7 +52,7 @@
             <a href="#">Team</a>
             <a href="#">Contact Us</a>
     
-</div>
+        </div>
 
         <div class="col-md-3 as"><p></p>project 5</div>
         <div class="col-md-3 as"><p></p> project 6</div>
@@ -84,6 +87,7 @@
             <p></p> project 16
         </div>
     </div>
+   
         <div id="btns">
             <input type="button" value="view all" id="clk" >
             <input type="button" value="view less" id="cl" >
@@ -92,7 +96,7 @@
 
 
     <div class=" text-center">
-        <h2 style="float: left  !important;"> Our team</h2>
+        <h2 style="float: left  !important;margin: 20px;"> Our team</h2>
         <br> <br><br> <br><br> 
        
         <div class="row">
@@ -129,15 +133,15 @@
         width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
 <div class="ttwo">
-<div class= "col-md-4 sp" >mail us at:
+<div class= "col-md-4 sp" >mail us at:<br>
 Namaste Nepal Travels & Tours Pvt. Ltd Amrit Marg, Thamel, Kathmandu, Nepal</div>
 
-<div class="col-md-4 sp">call us at:
-+977 1 4261079 (Office)
+<div class="col-md-4 sp">call us at:<br>
++977 1 4261079 (Office)<br>
 +977 9851192251 (Sushan)</div>
 <div class="col-md-4 sp">
-write us at:
-namastenepaltravels@gmail.com info@namastenepaltravels.com</div>
+write us at:<br>
+namastenepallondon@gmail.com info@namastelondon.com</div>
 
 </div>
     </footer>
@@ -180,7 +184,10 @@ namastenepaltravels@gmail.com info@namastenepaltravels.com</div>
     }
     
 
-   
+   function navShow(){
+      document.getElementById("navbar").style.display="inline-block";
+      console.log("aaa");
+   }
 
 </script>
 
