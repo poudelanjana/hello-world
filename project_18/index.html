@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>AnuAnjanaInterviewSite</title>
+    <title>ZenStudio Task Project</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/animate.css'>
 <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
@@ -15,21 +15,22 @@
         <img src="img/logo.jpg" height="100px" width="100ppx">
         
 </div>
-<i class="glyphicon glyphicon-align-justify" id="barrss" onclick="navShow()" ></i>
+<div >
+<i class="glyphicon glyphicon-align-justify" id="barrss" onclick="navShow()" ></i></div>
 <h2 class="anu">About Us</h2>
 <div class="myflex">
-   <div class="row">
-        <div class="col-md-3  nn" >
+  <div class="row">
+        <div class="col-md-3"  style="margin-left: 20px;">
             <img src="img/index.jfif"  >
         </div>
-        <div class="col-md-9 tt" style="margin-left: 20px;" >
+        <div class="col-md-8 " style="margin-left: 20px;" >
             <p>It is possible to put pages on the internet or on the web (text, audio, video, still images, animations, etc.).
             Presently, individuals and commercial organizations around the world serve their information on the web. The Web page
             has to be kept in the web page for any such information. Web pages can be created directly through HTML or other tools.
             The web page can be displayed through the browser. One of the pages of a website is referred to as a web page.
             </p>
         </div>
-    </div>
+        </div>
 </div>
 <div >
     <h2 style="margin-left:20px;" >
@@ -161,10 +162,9 @@ namastenepallondon@gmail.com info@namastelondon.com</div>
         });
     });
     $(document).ready(function () {
-            $("#cl").click(function () {
-                $(".look").toggle();
-                $("#clk").toggle();
-                  $("#cl").toggle();
+            $("#barrss").click(function () {
+                $("#navbar").toggle();
+                
 
             });
         });
@@ -184,10 +184,19 @@ namastenepallondon@gmail.com info@namastelondon.com</div>
     }
     
 
-   function navShow(){
-      document.getElementById("navbar").style.display="inline-block";
-      console.log("aaa");
-   }
+//    function navShow(){
+//       document.getElementById("navbar").style.display="inline-block";
+//       console.log("aaa");
+//    }
+
+   $(document).ready(function () {
+        $("#cl").click(function () {
+            $(".look").toggle();
+            $("#clk").toggle();
+            $("#cl").toggle();
+
+        });
+    });
 
 </script>
 
